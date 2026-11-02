@@ -14,9 +14,26 @@ public class Reserva {
     //asociacion de las llaves foraneas
     private final ObjectProperty<Cliente> cliente = new SimpleObjectProperty<>();
     private final ObjectProperty<Habitacion> habitacion = new SimpleObjectProperty<>();
+    private final ObjectProperty<Usuario> usuario = new SimpleObjectProperty<>();
 
     public Reserva() {
     }
+
+
+    public final Usuario getUsuario() {
+        return usuario.get();
+    }
+
+    public final void setUsuario(Usuario value) {
+        usuario.set(value);
+    }
+
+    public final ObjectProperty<Usuario> usuarioProperty() {
+        return usuario;
+    }
+
+
+
 
     public final Habitacion getHabitacion() {
         return habitacion.get();
