@@ -10,6 +10,8 @@ public class Cliente extends Persona {
     private final StringProperty email = new SimpleStringProperty();
     private final StringProperty genero = new SimpleStringProperty();
 
+
+
     public Cliente() {
     }
 
