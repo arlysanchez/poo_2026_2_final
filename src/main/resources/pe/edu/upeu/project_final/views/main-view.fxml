@@ -19,7 +19,7 @@
                 <HBox.margin><Insets left="10.0" /></HBox.margin>
             </Label>
             <Region HBox.hgrow="ALWAYS" />
-            <Label text="Bienvenido, Usuario" textFill="#014074">
+            <Label text="Bienvenido, " fx:id="lblUsuario" textFill="#014074">
                 <font><Font name="System Italic" size="14.0" /></font>
                 <HBox.margin><Insets right="20.0" /></HBox.margin>
             </Label>
@@ -30,9 +30,14 @@
    <left>
     <VBox prefWidth="200.0" styleClass="sidebar" BorderPane.alignment="CENTER">
         <children>
-            <Button maxWidth="-Infinity" onAction="#showHome" mnemonicParsing="false" styleClass="nav-button" text="Inicio" />
-            <Button maxWidth="-Infinity" onAction="#showClient" mnemonicParsing="false" styleClass="nav-button" text="Clientes" />
-            <Button maxWidth="-Infinity" onAction="#showHabitacion" mnemonicParsing="false" styleClass="nav-button" text="Habitaciones" />
+            <Button maxWidth="Infinity" onAction="#showHome" mnemonicParsing="false" styleClass="nav-button" text="Inicio" />
+            <Button maxWidth="Infinity" onAction="#showClient" mnemonicParsing="false" styleClass="nav-button" text="Clientes" />
+            <Button maxWidth="Infinity" onAction="#showHabitacion" mnemonicParsing="false" styleClass="nav-button" text="Habitaciones" />
+        <Region VBox.vgrow="ALWAYS"/>
+            <Button maxWidth="Infinity"
+                    mnemonicParsing="false" style="-fx-text-fill: #ff6666"
+                    styleClass="nav-button" text="Cerrar Sesion" onAction="#handleLogout" />
+
         </children>
 
     </VBox>

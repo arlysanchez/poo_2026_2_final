@@ -38,18 +38,18 @@
                  <VBox spacing="5.0">
                      <children>
                          <Label text="Usuario" textFill="#666666"/>
-                         <TextField promptText="Ingrese su usuario"/>
+                         <TextField fx:id="txtUser" promptText="Ingrese su usuario"/>
                      </children>
                  </VBox>
                  <!--input of the password-->
                  <VBox spacing="5.0">
                      <children>
                          <Label text="Password" textFill="#666666"/>
-                         <PasswordField promptText="********"/>
+                         <PasswordField fx:id="txtPassword" promptText="********"/>
                      </children>
                  </VBox>
                  <Button maxWidth="Infinity" mnemonicParsing="false"
-                         styleClass="button-login" text="INGRESAR">
+                         styleClass="button-login" text="INGRESAR" onAction="#handleLogin">
                      <VBox.margin>
                          <Insets top="10.0"/>
                      </VBox.margin>
