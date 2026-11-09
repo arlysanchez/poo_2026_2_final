@@ -104,3 +104,8 @@
 -fx-background-color: #FF6666;
 -fx-text-fill: white;
 }
+
+.button-action-cancel{
+-fx-background-color: #EFA30E;
+-fx-text-fill: white;
+}

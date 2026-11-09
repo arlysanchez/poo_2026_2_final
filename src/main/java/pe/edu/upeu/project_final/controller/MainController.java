@@ -38,6 +38,10 @@ public class MainController {
         loadView("habitacion-view.fxml");
     }
     @FXML
+    private void showReserva(){
+        loadView("reserva-view.fxml");
+    }
+    @FXML
     private void handleLogout(){
         UserSession.getInstance().cleanSession();
         System.exit(0);
