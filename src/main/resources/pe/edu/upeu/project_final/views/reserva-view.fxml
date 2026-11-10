@@ -21,7 +21,7 @@
                <font><Font name="System Bold" size="20.0"/></font>
            </Label>
            <Region HBox.hgrow="ALWAYS"/>
-           <Button mnemonicParsing="false" styleClass="button-login" text="NUEVA RESERVA"/>
+           <Button mnemonicParsing="false" styleClass="button-login" onAction="#handleNew" text="NUEVA RESERVA"/>
        </HBox>
         <TableView fx:id="TableReserva" VBox.vgrow="ALWAYS">
             <columns>
